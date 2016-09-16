@@ -1,0 +1,110 @@
+h1, h2 {
+	font-size: 3.2em;
+}
+
+h3, h4 {
+	font-size: 1.6em;
+}
+
+ul.nav {
+	li {
+		display: inline-block;
+		width: 100px;
+		a {
+			
+		}
+	}
+}
+
+.toggle {
+	top: 36px;
+}
+
+.un-toggle {
+	position: absolute;
+	top: 38px;
+}
+
+blockquote {
+    margin: 3em;
+}
+
+header {
+	h1 {
+		background-image: url(../assets/images/JacksonsHillLogo.png);
+		width: 400px;
+	}
+}
+
+.content {
+	.pattern-back {
+		.intro {
+			width: 65%;
+			padding: 2em 0;
+		}
+		.main-carousel {
+			h3 {
+				font-size: 1.6em;
+			}
+		}
+		.quote-meta {
+			margin-top: -6em;
+		}
+	}
+	.texture-back {
+		img {
+			max-width: 700px;
+		}
+		h4 {
+		    width: 70%;
+		}
+	}
+	.video-back {
+		.overlay {
+			h1, h2 {
+				font-size: 3.2em;
+			}
+			.player {
+				//display: block;
+			    margin: 3em auto;
+			}
+		}
+	}
+	/* Products */
+
+	.category-container {
+    	.product-container {
+	    	width: 96%;
+			.product-image {
+				img {
+					height: 400px;
+				}
+			}	
+		}
+	}
+}
+
+.main-carousel {
+	height: 720px;
+	width: 90%;
+	.carousel-cell {
+	  width: 100%; /* full width */
+	  height: 100%; /* height of carousel */
+	  margin-right: 10px;
+	  img {
+	  	max-width: 1280px;
+	  }
+	}
+}
+
+#portfolio li {
+	width: 46%;
+	/*max-width: 400px;*/
+	margin: 2%;
+}
+
+#videos li {
+	width: 46%;
+	/*max-width: 400px;*/
+	margin: 2%;
+}

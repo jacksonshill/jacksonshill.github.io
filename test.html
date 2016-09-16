@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<title>Jackson's Hill Winery</title>
+		<meta charset="utf-8">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+		<script src="https://npmcdn.com/jquery@3.1.0/dist/jquery.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+		<script src="JS/test.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400" rel="stylesheet">
+		<style type="text/css">
+			.redText {
+				color: red;
+			}
+			.blueText {
+				color: blue;
+			}
+		</style>
+		
+	</head>
+	<body>
+	<div id="leader"></div>
+
+	<script id="leader-container" type="text/x-handlebars-template">
+		<h2>Lesson in {{name}}</h2>
+		<ul>
+			{{#each benefits}}
+			<li>{{benefit}}</li>
+			{{/each}}
+		</ul>
+		{{{leaderStatement}}}
+
+		{{makeLink "Dutchism" "http://www.dutchism.com"}}
+
+		{{changeColor "Make it red" color="red"}}
+
+		{{sayHello}}
+	</script>
+
+	<script type="text/javascript">
+		var container = document.getElementById("leader-container").innerHTML;
+		var template = Handlebars.compile(container);
+
+		// Helper
+		Handlebars.registerHelper("makeLink", function(text, URL){
+			text = Handlebars.Utils.escapeExpression(text);
+			URL = Handlebars.Utils.escapeExpression(URL);
+			var textLink = '<p><a href="' + URL + '">' + text + '</a></p>';
+			return new Handlebars.SafeString(textLink);
+		});
+
+		Handlebars.registerHelper("changeColor", function(text, options){
+			text = Handlebars.Utils.escapeExpression(text);
+			if (options.hash.color === "red") {
+				return new Handlebars.SafeString("<p class='redText'>" + text + "</p>");
+			}
+			else if (options.hash.color === "blue") {
+				return new Handlebars.SafeString("<p class='blueText'>" + text + "</p>");
+			}
+			else {
+				return new Handlebars.SafeString("<p>" + text + "</p>");
+			}
+		});
+
+		Handlebars.registerHelper("sayHello", function(options){
+			switch(options.data.lang){
+				case "spanish": return "Hola";
+				break;
+				case "french": return "Bonjour";
+				break;
+				default: return "Hello";
+			}
+		});
+
+		var data = template({
+			name: "Handlebars JS",
+			benefits: [
+				{benefit: "Awesome"},
+				{benefit: "Fast"},
+				{benefit: "Easy"}
+			],
+			leaderStatement: "<p><strong>Just add our URL and your token to your form action and VOILA! we'll take care of all of your form submissions. No PHP, no Javascript, no server-side coding. Simply create a form, route the form through us, and receive the the responses via email. You want more? Check out what you can do with our pro features.</strong></p>"
+		}, {data:{
+			lang: "spanish"
+			}
+		});
+		document.getElementById("leader").innerHTML += data;
+	</script>
+
+	
+
+	</body>
+</html>

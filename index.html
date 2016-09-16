@@ -1,0 +1,124 @@
+<html>
+	<head>
+		<title>Jackson's Hill Winery</title>
+		<meta charset="utf-8">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>-->
+	    <script src="https://npmcdn.com/jquery@3.1.0/dist/jquery.min.js"></script>
+	    <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+		<script src="JS/main.js"></script>
+		<script src="JS/rotator.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.css" media="screen">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+		<div class="container" id="container">
+			<input type="checkbox" id="menu-toggle">
+			<header>
+				<h1><a href="../JacksonsHill/index.html">Jackson's Hill</a></h1>
+				
+				<label class="toggle" for="menu-toggle">☰</label>
+				<label class="un-toggle" for="menu-toggle">x</label>
+				<ul class="nav header-nav">
+					<li id="nav-wines"><a href="../JacksonsHill/jacksons-hill-wines.html">Wines</a></li>
+					<li id="nav-about"><a href="../JacksonsHill/about-jacksons-hill.html">About</a></li>
+					<li id="nav-gallery"><a href="../JacksonsHill/jacksons-hill-gallery.html">Gallery</a></li>
+					<li id="nav-video"><a href="../JacksonsHill/jacksons-hill-videos.html">Video</a></li>
+					<li id="nav-contact"><a href="../JacksonsHill/contact-jacksons-hill.html">Contact</a></li>
+				</ul>
+			</header>
+
+			<!--This is our template. -->
+			<!--Data will be inserted in its according place, replacing the brackets.-->
+			<!--<script id="address-template" type="text/x-handlebars-template">
+			  <p>You can find me in {{city}}. My address is {{number}} {{street}}.</p>
+			</script>-->
+
+			<!--Your new content will be displayed in here-->
+			<div class="content-placeholder"></div>
+			
+			<div class="content">
+				
+				<div class="row texture-back">
+					<img src="assets/images/BottleGroup.png">
+					<h2>Magnificant Wines</h2>
+					<a href="../JacksonsHill/jacksons-hill-wines.html" class="btn">View wines</a>
+				</div>
+
+				<div class="row pattern-back">
+					<h3 class="intro">Jackson’s Hill wines reflect their varietal appeal but further, they embody elements of interest – complexity and nuances that create an extra layer.</h3>
+				</div>
+
+				<div class="row photo-back">
+					<h2>Stunning Location</h2>
+					<h3 class="intro">Sitting atop a hill sporting spectacular views, Jackson’s Hill vineyard is one of the highest in the Hunter and is fairly unique in terms of the soil profile.</h3>
+					<a href="../JacksonsHill/jacksons-hill-gallery.html" class="btn">View gallery</a>
+				</div>
+
+				<div class="row pattern-back">
+					<div class="main-carousel" data-flickity='{ "autoPlay": 5000 }'>
+						<div class="carousel-cell">
+						  	<blockquote>
+								<h3 class="intro">Fresh crisp lemony citrus palate that is delicate, intense, textural and really mouth watering… but hey that’s great Semillon from the Hunter Valley. Now, where’s the Oysters?</h3>
+								<p><a href="../JacksonsHill/jacksons-hill-wines.html">Jackson’s Hill Reserve 2016 Semillon &#10145;</a></p>
+							</blockquote>
+							<div class="quote-meta">
+								<img src="assets/images/tasting-panel-nicole.jpg">
+								<h4>Nicole Gow</h4>
+								<p>Wine Show Judge</p>
+							</div>
+						</div>
+						<div class="carousel-cell">
+						  	<blockquote>
+								<h3 class="intro">We very much approach our wines with a regard to pairing them with food, as wine is better with food and food is better with wine.</h3>
+								<p><a href="../JacksonsHill/jacksons-hill-wines.html">Jackson's Hill Chardonnay 2013 &#10145;</a></p>
+							</blockquote>
+							<div class="quote-meta">
+								<img src="assets/images/tasting-panel-adam.jpg">
+								<h4>Adam Walls</h4>
+								<p>Wine Educator, Wine Show Judge</p>
+							</div>
+						</div>
+						<div class="carousel-cell">
+						  	<blockquote>
+								<h3 class="intro">The mid-palate is mouth-watering and savoury, the finish long and minerally with elegant umami appeal. A delicioulsy refined cool climate wine.</h3>
+								<p><a href="../JacksonsHill/jacksons-hill-wines.html">Jackson's Hill Chardonnay 2013 &#10145;</a></p>
+							</blockquote>
+							<div class="quote-meta">
+								<img src="assets/images/tasting-panel-dave.jpg">
+								<h4>Dave Mavor</h4>
+								<p>Winemaker, Wine Show Judge</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row video-back">
+					<video autoplay muted loop>
+						<source src="assets/videos/harvesting_1080.mp4" type="video/mp4">
+					</video>
+					<div class="overlay">
+						<h2>Experienced Production</h2>
+						<img src="assets/images/PlayerBtn.png" class="player">
+						<a class="btn" href="../JacksonsHill/jacksons-hill-videos.html">View videos</a>
+					</div>
+				</div>
+
+			</div>
+			<footer>
+				<ul class="nav footer-nav">
+					<li id="nav-wines"><a href="../JacksonsHill/jacksons-hill-wines.html">Wines</a></li>
+					<li id="nav-about"><a href="../JacksonsHill/about-jacksons-hill.html">About</a></li>
+					<li id="nav-gallery"><a href="../JacksonsHill/jacksons-hill-gallery.html">Gallery</a></li>
+					<li id="nav-video"><a href="../JacksonsHill/jacksons-hill-videos.html">Video</a></li>
+					<li id="nav-contact"><a href="../JacksonsHill/contact-jacksons-hill.html">Contact</a></li>
+				</ul>
+			</footer>
+			<div class="back-to-top">&#8679;</div>
+		</div>
+	</body>
+</html>

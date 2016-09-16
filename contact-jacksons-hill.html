@@ -1,0 +1,105 @@
+<html>
+	<head>
+		<title>Contact Jackson's Hill Winery</title>
+		<meta charset="utf-8">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+	    <script src="https://npmcdn.com/jquery@3.1.0/dist/jquery.min.js"></script>
+		<script src="JS/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+	</head>
+	<body class="contact">
+		<div class="container" id="container">
+			<input type="checkbox" id="menu-toggle">
+			<header>
+				<h1><a href="../JacksonsHill/index.html">Jackson's Hill</a></h1>
+				
+				<label class="toggle" for="menu-toggle">☰</label>
+				<label class="un-toggle" for="menu-toggle">x</label>
+				<ul class="nav header-nav">
+					<li id="nav-wines"><a href="../JacksonsHill/jacksons-hill-wines.html">Wines</a></li>
+					<li id="nav-about"><a href="../JacksonsHill/about-jacksons-hill.html">About</a></li>
+					<li id="nav-gallery"><a href="../JacksonsHill/jacksons-hill-gallery.html">Gallery</a></li>
+					<li id="nav-video"><a href="../JacksonsHill/jacksons-hill-videos.html">Video</a></li>
+					<li id="nav-contact"><a href="../JacksonsHill/contact-jacksons-hill.html">Contact</a></li>
+				</ul>
+			</header>
+			<div class="content">
+				
+				<div class="row texture-back">
+					<h1 class="intro">Contact Jackson's Hill</h1>
+					
+					<!--<p><strong>Address</strong><br />
+					Mount View Road,<br />
+					Hunter Valley,<br />
+					NSW 2321<br />
+					</p>
+					<p><strong>Telephone</strong><br />
+					1300 720 098</p>-->
+					<h4>If you'd like to arrange a time to drop in for a visit at Jackson's Hill, feel free to give us a call on <strong>1300 720 098</strong> or complete the form below.</h4>
+					<!--<form action="https://formspree.io/ben.holland@wineselectors.com.au" method="POST">
+						<label for="name">Name</label>
+						<input type="text" name="name">
+
+						<label for="email">Email</label>
+						<input type="email" name="email">
+
+						<label for="message">Message</label>
+						<textarea name="message"></textarea>
+
+						<button type="submit" class="btn">Submit</button>
+
+					</form>-->
+
+					<form action="http://flipmail.co/api/CGwxNsCLMIvkW55W7ohW" method="post">
+
+						<input type="hidden" name="_valid[name]" value="required|alpha">
+					    <input type="hidden" name="_valid[email]" value="required|valid_email">
+					    <input type="hidden" name="_valid[message]" value="required">
+					    <input type="hidden" name="_subject" value="New mail from jacksonshill.com">
+					    <input type="hidden" name="_replyto" value="%email">
+					    <input type="hidden" name="_after" value="../JacksonsHill/index.html">
+					    <input type="text" name="_honey" value="" style="display:none">
+					    <input type="hidden" name="cc[]" value="webmaster@wineselectors.com.au">
+
+					   <label for="name">Name</label>
+					   <input type="text" name="name">
+
+					   <label for="email">Email</label>
+					   <input type="email" name="email">
+
+					   <label for="message">Message</label>
+					   <textarea name="message"></textarea>
+					   
+					   <button type="submit" class="btn">Submit</button>
+					</form>
+					
+				</div>
+
+				<div class="row pattern-back" id="map">
+					<h3 class="intro">A fantastic part of the world</h3>
+					
+					<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+					<div style='overflow:hidden;'>
+						<div id='gmap_canvas' style='height:440px;'></div>
+						<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+					</div>
+					<script type='text/javascript'>function init_map(){var myOptions = {zoom:10,scrollwheel:false,center:new google.maps.LatLng(-32.834780,151.300363),mapTypeId: google.maps.MapTypeId.HYBRID};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-32.834780,151.300363)});infowindow = new google.maps.InfoWindow({content:'<strong>Jackson\'s Hill</strong><br>Mount View Road, Hunter Valley, NSW 2321<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+				</div>
+
+			</div>
+			<footer>
+				<ul class="nav footer-nav">
+					<li id="nav-wines"><a href="../JacksonsHill/jacksons-hill-wines.html">Wines</a></li>
+					<li id="nav-about"><a href="../JacksonsHill/about-jacksons-hill.html">About</a></li>
+					<li id="nav-gallery"><a href="../JacksonsHill/jacksons-hill-gallery.html">Gallery</a></li>
+					<li id="nav-video"><a href="../JacksonsHill/jacksons-hill-videos.html">Video</a></li>
+					<li id="nav-contact"><a href="../JacksonsHill/contact-jacksons-hill.html">Contact</a></li>
+				</ul>
+			</footer>
+			<div class="back-to-top">&#8679;</div>
+		</div>
+	</body>
+</html>

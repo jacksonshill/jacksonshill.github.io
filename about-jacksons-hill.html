@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<title>About Jackson's Hill Winery</title>
+		<meta charset="utf-8">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+	    <script src="https://npmcdn.com/jquery@3.1.0/dist/jquery.min.js"></script>
+		<script src="JS/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+	</head>
+	<body class="about">
+		<div class="container" id="container">
+			<input type="checkbox" id="menu-toggle">
+			<header>
+				<h1><a href="../JacksonsHill/index.html">Jackson's Hill</a></h1>
+				
+				<label class="toggle" for="menu-toggle">☰</label>
+				<label class="un-toggle" for="menu-toggle">x</label>
+				<ul class="nav header-nav">
+					<li id="nav-wines"><a href="../JacksonsHill/jacksons-hill-wines.html">Wines</a></li>
+					<li id="nav-about"><a href="../JacksonsHill/about-jacksons-hill.html">About</a></li>
+					<li id="nav-gallery"><a href="../JacksonsHill/jacksons-hill-gallery.html">Gallery</a></li>
+					<li id="nav-video"><a href="../JacksonsHill/jacksons-hill-videos.html">Video</a></li>
+					<li id="nav-contact"><a href="../JacksonsHill/contact-jacksons-hill.html">Contact</a></li>
+				</ul>
+			</header>
+			<div class="content">
+				
+				<div class="row photo-back">
+					<h2>About Jackson's Hill</h2>
+					<h3 class="intro">Sitting atop a hill sporting spectacular views, Jackson’s Hill vineyard is one of the highest in the Hunter and is fairly unique in terms of the soil profile…</h3>
+					<p>Located in the Mount View sub-region of the Hunter Valley, Jackson’s Hill was established as a vineyard in 1983 after previously being used for grazing livestock. The vineyard is geographically the highest in the Hunter Valley and is planted with Semillon and Cabernet Sauvignon plus Cabernet Franc - which isn’t typically grown in the region.</p>
+					<a href="../JacksonsHill/jacksons-hill-wines.html" class="btn">View wines</a>
+				</div>
+
+				<div class="row pattern-back" id="map">
+					<h3 class="intro">A fantastic part of the world</h3>
+					<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+					<div style='overflow:hidden;'>
+						<div id='gmap_canvas' style='height:440px;'></div>
+						<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+					</div>
+					<script type='text/javascript'>function init_map(){var myOptions = {zoom:10,scrollwheel:false,center:new google.maps.LatLng(-32.834780,151.300363),mapTypeId: google.maps.MapTypeId.HYBRID};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-32.834780,151.300363)});infowindow = new google.maps.InfoWindow({content:'<strong>Jackson\'s Hill</strong><br>Mount View Road, Hunter Valley, NSW 2321<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+				</div>
+
+				<div class="row texture-back">
+				<h3>The soil profile of the property is quite atypical</h3>
+					<p>Basically the Jackson’s Hill site is limestone with only a shallow layer of red soil covering. This means the vines are quite stressed for nutrients and ironically stressed vines produce the best fruit. Grape vines are generally vigorous growers and this vigour needs to be kept in check.</p>
+					<p>During WWII Jackson’s Hill was seconded for its limestone deposits. It was thought that if Australia’s limestone coast became isolated due to invasion the limestone at Jackson’s Hill could be utilized by the eastern states for construction.</p>
+					<a href="../JacksonsHill/jacksons-hill-gallery.html" class="btn">View gallery</a>
+				</div>
+
+				<div class="row pattern-back">
+					<blockquote>
+						<h3 class="intro">We very much approach our wines with a regard to pairing them with food, as wine is better with food and food is better with wine.</h3>
+					</blockquote>
+					<div class="quote-meta">
+						<img src="assets/images/tasting-panel-adam.jpg">
+						<h4>Adam Walls</h4>
+						<p>Wine Educator, Wine Show Judge</p>
+					</div>
+				</div>
+
+				<div class="row video-back">
+					<video autoplay muted loop>
+						<source src="assets/videos/harvesting_1080.mp4" type="video/mp4">
+					</video>
+					<div class="overlay">
+						<h2>Experienced Production</h2>
+						<img src="assets/images/PlayerBtn.png" class="player">
+						<a class="btn" href="../JacksonsHill/jacksons-hill-videos.html">View videos</a>
+					</div>
+				</div>
+
+			</div>
+			<footer>
+				<ul class="nav footer-nav">
+					<li id="nav-wines"><a href="../JacksonsHill/jacksons-hill-wines.html">Wines</a></li>
+					<li id="nav-about"><a href="../JacksonsHill/about-jacksons-hill.html">About</a></li>
+					<li id="nav-gallery"><a href="../JacksonsHill/jacksons-hill-gallery.html">Gallery</a></li>
+					<li id="nav-video"><a href="../JacksonsHill/jacksons-hill-videos.html">Video</a></li>
+					<li id="nav-contact"><a href="../JacksonsHill/contact-jacksons-hill.html">Contact</a></li>
+				</ul>
+			</footer>
+			<div class="back-to-top">&#8679;</div>
+		</div>
+	</body>
+</html>

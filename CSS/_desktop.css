@@ -1,0 +1,8 @@
+ul.nav li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+ul.nav li a {
+  font-size: 0.6em;
+}
