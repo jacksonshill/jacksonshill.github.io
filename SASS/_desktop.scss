@@ -105,7 +105,7 @@ header {
 }
 
 .main-carousel {
-	height: 600px;
+	height: 620px;
 	.carousel-cell {
 	  width: 100%; /* full width */
 	  height: 100%; /* height of carousel */
@@ -116,6 +116,7 @@ header {
 	}
 	.flickity-prev-next-button.previous {
 	    left: 16%;
+	    top: 50%;
 	}
 	.flickity-prev-next-button.next {
 	    right: 16%;
