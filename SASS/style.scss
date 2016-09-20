@@ -409,7 +409,7 @@ form {
 /*Flickity */
 
 .main-carousel {
-	height: 680px;
+	height: 720px;
 	margin: 0 auto;
     width: 100%;
 	.carousel-cell {
@@ -422,6 +422,7 @@ form {
 	}
 	.flickity-prev-next-button {
 	    border-radius: 0;
+	    top: 55%;
 	}
 	.flickity-page-dots {
 	    margin: 1em 0;
@@ -513,6 +514,6 @@ footer {
 	@import "tablet";
 }
 
-@media only screen and (min-width: 1281px){
+@media only screen and (min-width: 1025px){
 	@import "desktop";
 }
